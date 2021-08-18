@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "ethereum",
+    "ethereum-contract",
+    "erc20"
+  ],
+  "author": "Konsti",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0"
+  },
+  "scripts": {
+    "lint:sol": "solhint 'contracts/**/*.sol' && prettier -c 'contracts/**/*.sol'",
+    "lint:sol:fix": "prettier --write \"contracts/**/*.sol\"",
+    "test": "truffle test"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "prettier": "^2.3.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.16",
+    "solhint": "^3.3.6",
+    "truffle": "^5.4.5",
+    "web3": "^1.4.0"
+  }
+}
